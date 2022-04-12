@@ -66,11 +66,11 @@
 
     <it.ngallazzi.fancyswitch.FancySwitch
         android:id="@+id/fancySwitch"
-        android:layout_height="110dp"
         android:layout_width="wrap_content"
-        app:orientation="LANDSCAPE"
+        android:layout_height="wrap_content"
+        app:baseColor="@android:color/holo_blue_dark"
 
-        app:baseColor="@android:color/holo_blue_dark" />
+        app:orientation="LANDSCAPE" />
 
 
     <TextView

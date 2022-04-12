@@ -1,7 +1,9 @@
 package com.adl.belajarsharedpreference
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CompoundButton
@@ -69,6 +71,11 @@ class UjiLab : AppCompatActivity() {
 
 
             }
+        })
+
+        btn_spotify.setOnClickListener({
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=Eye3jbkj8pk&t=2s"))
+            startActivity(i)
         })
 
         btnSave.setOnClickListener({
