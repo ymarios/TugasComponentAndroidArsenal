@@ -45,4 +45,12 @@ dependencies {
     //add switch fancy
     implementation 'com.github.ngallazzi:FancySwitch:1.1'
 
+    //add fancy button
+    implementation 'com.github.medyo:fancybuttons:1.9.1'
+
+    implementation 'com.android.support:support-v13:31.1.0'
+
+
+
+
 }

@@ -17,7 +17,7 @@ class UjiLab : AppCompatActivity() {
 
      var sliderValue:Int = 0
      var groupCombo:Int = 0
-    var switchComp:Boolean = false
+     var switchComp:Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,10 +52,9 @@ class UjiLab : AppCompatActivity() {
             groupCombo = p1
         }
 
-        switch1.setOnCheckedChangeListener { p0, p1 ->
-            Toast.makeText(this@UjiLab, "nilainya adalah ${p1}", Toast.LENGTH_SHORT).show()
-            switch1.setText(p1.toString())
-            switchComp = p1
+        switch1.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) switch1.text = "ON" else switch1.text = "OFF"
+            switchComp = isChecked
         }
 
         fancySwitch.setSwitchStateChangedListener(object : FancySwitch.StateChangedListener{
@@ -99,4 +98,5 @@ class UjiLab : AppCompatActivity() {
 
 
     }
+
 }
